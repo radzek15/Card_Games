@@ -12,6 +12,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="MIXED" />
   </component>
+  <component name="GithubProjectSettings">
+    <option name="CREATE_PULL_REQUEST_DEFAULT_BRANCH" value="master" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_USER" value="radzek15" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_NAME" value="War_Card_Game" />
+  </component>
   <component name="ProjectId" id="2Ecimk845AybLNkXRhPsDhCY5ho" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">

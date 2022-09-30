@@ -16,3 +16,5 @@ class Deck:
 
     def __init__(self):
         self.deck = [Card(r,s) for r in ranks for s in suits]
+
+test = 'asfafsafsaf'

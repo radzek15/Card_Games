@@ -1,18 +1,51 @@
-from random import shuffle
-values = {'2':2,'3':3,'4':4,'5':5,'6':6,'7':7,'8':8,'9':9,'10':10,'J':11,'Q':12,'K':13,'A':14}
-suits = ['Clubs','Hearts','Spades','Diamonds']
-ranks = [key for key in values.keys()]
-class Card:
+import random
+from Deck import Deck
+from Player import Player
 
-    def __init__(self, rank, suit):
-        self.rank = rank
-        self.suit = suit
-        self.value = values[rank]
+player1, player2 = Player('CPU 1'), Player('CPU 2')
+new_deck = Deck()
+new_deck.shuffle()
+player1.add_cards(new_deck.deck[0:26])
+player2.add_cards(new_deck.deck[26:52])
 
-    def __str__(self):
-        return self.rank + ' of ' + self.suit
+round_counter = 0
+game_on = True
+while game_on:
+    round_counter += 1
+    if len(player1.hand) == 0:
+        print(f'Player {player1.name} Wins')
+        game_on = False
+        break
 
-class Deck:
+    if len(player2.hand) == 0:
+        print(f'Player {player2.name} Wins')
+        game_on = False
+        break
 
-    def __init__(self):
-        self.deck = [Card(r,s) for r in ranks for s in suits]
+    player1_card = []
+    player1_card.append(player1.remove_card())
+    player2_card = []
+    player2_card.append(player2.remove_card())
+
+    war = True
+    while war:
+        if player1_card[-1].value > player2_card[-1].value:
+            player1.add_cards(player1_card), player1.add_cards(player2_card)
+            war = False
+        elif player1_card[-1].value < player2_card[-1].value:
+            player2.add_cards(player1_card), player2.add_cards(player2_card)
+            war = False
+        else:
+            if len(player1.hand) < 5:
+                print(f'Player {player2.name} Wins')
+                game_on = False
+                break
+            elif len(player2.hand) < 5:
+                print(f'Player {player1.name} Wins')
+                game_on = False
+                break
+            else:
+                for i in range(5):
+                    player1_card.append(player1.remove_card())
+                    player2_card.append(player2.remove_card())
+print(f'Whole war took {round_counter} rounds')

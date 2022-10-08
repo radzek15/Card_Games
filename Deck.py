@@ -4,9 +4,11 @@ values = {'2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7, '8': 8, '9': 9, '10': 
 suits = ['Clubs', 'Hearts', 'Spades', 'Diamonds']
 ranks = [key for key in values.keys()]
 class Deck:
-#init Deck, creating all 52 card
+
+#specyfying creating all 52 card
     def __init__(self):
         self.deck = [Card(r, s) for r in ranks for s in suits]
 
+#function to randomly shuffle deck
     def shuffle(self):
         random.shuffle(self.deck)

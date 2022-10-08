@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="89c734e6-8c71-454c-a69a-e4adaad1468f" name="Default Changelist" comment="a">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/game.py" afterDir="false" />
     </list>
     <list id="9324dc2d-e7e4-43a8-a317-760c7f5f869a" name="Revert &quot;Initial commit&quot;" comment="Revert &quot;Initial commit&quot;&#10;&#10;This reverts commit eb792e8e" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,7 +36,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="Python.Deck">
+  <component name="RunManager" selected="Python.game">
     <configuration name="Card" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -145,9 +144,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Deck" />
-        <item itemvalue="Python.Player" />
         <item itemvalue="Python.game" />
+        <item itemvalue="Python.Player" />
+        <item itemvalue="Python.Deck" />
         <item itemvalue="Python.Card" />
       </list>
     </recent_temporary>
@@ -224,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664574912322</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Last commit without comments">
+      <created>1664812585805</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1664812585805</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -243,6 +249,7 @@
     <MESSAGE value="test commit" />
     <MESSAGE value="class" />
     <MESSAGE value="a" />
-    <option name="LAST_COMMIT_MESSAGE" value="a" />
+    <MESSAGE value="Last commit without comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Last commit without comments" />
   </component>
 </project>

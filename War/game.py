@@ -1,5 +1,6 @@
-from ..deck import FullDeck
-from ..player import Player
+from useable.deck import FullDeck
+from useable.player import Player
+
 
 player1, player2 = Player('CPU 1'), Player('CPU 2')
 new_deck = FullDeck()
@@ -21,10 +22,8 @@ while game_on:
         game_on = False
         break
 
-    player1_card = []
-    player1_card.append(player1.remove_card())
-    player2_card = []
-    player2_card.append(player2.remove_card())
+    player1_card = [player1.remove_card()]
+    player2_card = [player2.remove_card()]
 
     war = True
     while war:
@@ -47,4 +46,5 @@ while game_on:
                 for i in range(5):
                     player1_card.append(player1.remove_card())
                     player2_card.append(player2.remove_card())
+
 print(f'Whole war took {round_counter} rounds')
